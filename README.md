@@ -1,5 +1,5 @@
 # systemCar
-Sistema simples com login e senha validação por banco de dados mysql com listagem de veículos. Linguagens utilizados HTML(BOOTSTRAP), PHP/MYSQL/CSS/
+Sistema simples com login e senha validação por banco de dados mysql com listagem de veículos. Linguagens utilizadas HTML(BOOTSTRAP), PHP/MYSQL/CSS/
 Para utilizar esse template deve-se instala os seguintes recursos : 
 
 Wampserver
