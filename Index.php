@@ -83,11 +83,12 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
                     <input type="password" name="senha" placeholder="Senha" class="form-control">
                 </div>
                 <button type="submit" class="btn-login btn  btn-block btn-lg">Login</button>
-                <button class="btn-login btn  btn-block btn-lg"><a href="add_user.php">Cadastrar</a></button>
+                <button class="btn-login btn  btn-block btn-lg"><a href="user_add_test.php">Cadastrar</a></button>
             </div>
             </form>
         </div>
     </div>
+    
 </body>
 
 </html>
