@@ -44,22 +44,26 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Test Car</title>
+    <title>LOGIN - Cadastro de Carros</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <meta name="author" content="Crystian Ediez Galdino">
+    <meta name="description" content="Portfólio da desenvolvedor front-end Crystian Ediez Galdino">
+    <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <style>
+    <link rel="stylesheet" href="style.css">
+    <style>
     body {
         background: rgb(0, 0, 0);
         background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(8, 88, 74, 1) 35%, rgba(27, 145, 142, 1) 100%);
     }
-    </style>
-    <link rel="stylesheet" href="style.css">
-    <style>
+
     *body {
         margin: 0;
         overflow: hidden;
     }
     </style>
+
 </head>
 
 <body>
@@ -73,22 +77,23 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
         <div class="right-login">
             <div class="card-login">
                 <h1>LOGIN</h1>
-                <form action="index.php"method="POST" >
-                <div class="textfield" class="form-group">
-                    <label for="usuarios"> Usuário</label>
-                    <input type="text" name="email" placeholder="Usuário" class="form-control">
-                </div>
-                <div class="textfield" class="form-group">
-                    <label for="senhas"> Senha</label>
-                    <input type="password" name="senha" placeholder="Senha" class="form-control">
-                </div>
-                <button type="submit" class="btn-login btn  btn-block btn-lg">Login</button>
-                <button class="btn-login btn  btn-block btn-lg"><a href="user_add_test.php">Cadastrar</a></button>
+                <form action="index.php" method="POST">
+                    <div class="textfield" class="form-group">
+                        <label for="usuarios"> Usuário</label>
+                        <input type="text" name="email" placeholder="Digite seu Login" class="form-control">
+                    </div>
+                    <div class="textfield" class="form-group">
+                        <label for="senhas"> Senha</label>
+                        <input type="password" name="senha" placeholder="Digite sua Senha" class="form-control">
+                    </div>
+                    <button type="submit" class="btn-login btn  btn-block ">Login</button>
+                    <a href="cadastra_usuario.php" class="btn-login btn btn-primary ">Cadastrar</a>
+
             </div>
             </form>
         </div>
     </div>
-    
+
 </body>
 
 </html>

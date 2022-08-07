@@ -1,28 +1,29 @@
-
 <?php
     include('protect.php');
     include('dbcarslist.php');
     $consultacarros = "SELECT * FROM carros ORDER BY id" ;
     $con = $mysqli->query($consultacarros)or die("SQL ERROR")
   
-
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Test Car</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta name="author" content="Crystian Ediez Galdino">
+    <meta name="description" content="Portfólio da desenvolvedor front-end Crystian Ediez Galdino">
+    <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>LOGADO</title>
+    <title>Lista de carros</title>
     <style>
     body {
+        overflow: hidden;
+        margin: 0;
         background: rgb(0, 0, 0);
         background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(8, 88, 74, 1) 35%, rgba(27, 145, 142, 1) 100%);
     }
@@ -30,10 +31,21 @@
 </head>
 
 <body>
+    <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title"><?php echo $_SESSION['nome'];?></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
 
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand"><?php echo $_SESSION['nome'];?>
+            <p>Para ter acesso ao Painel é necessário está logado.</p>
+            <p>Click em Sair para deslogar.</p>
+            <a href="logout.php" class="btn btn-primary">Sair</a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-light  ">
+        <div class="container-fluid ">
+            <a class="navbar-brand "><?php echo $_SESSION['nome'];?>
                 <p>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -43,36 +55,39 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="painel.php">Consultar</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="cadastrar.php">Cadastrar</a>
                     </li>
                 </ul>
+
                 <div class="position-fixed top-0 end-0">
-                    <button type="button" class="btn btn-outline-danger btn-lg  btn-padding-y:1rem"><a class="link"
-                            href="logout.php">SAIR</a></button>
+
+                    <button type="button" class="btn btn-outline-danger btn-lg  btn-padding-y:1rem"
+                        data-bs-toggle="offcanvas" data-bs-target="#demo"><a>SAIR</a></button>
 
                 </div>
             </div>
         </div>
+
     </nav>
+
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4">
-                <h1 class="text-danger">Lista de Carros</h1>
-                <table class="table table-bordered table-hover ">
+            <div class="col-lg-4 container mt-3">
+                <h1 class="p-5  text-white text-center">Lista de Carros</h1>
+
+                <table
+                    class="table table-striped table-dark table-bordered table-borderless table-responsive  table-hover ">
                     <thead>
                         <tr>
-                            <td class="text-white">Marca</td>
-                            <td class="text-info">Modelo</td>
-                            <td class="text-light">Cor</td>
+                            <th class="text-white">Marca</th>
+                            <th class="text-info">Modelo</th>
+                            <th class="text-light">Cor</th>
+                            <th scope="col">EDITAR</th>
+                            <th scope="col">EXCLUIR</th>
                         </tr>
                     </thead>
                     <?php while($dados = $con->fetch_assoc()){ ?>
@@ -81,8 +96,8 @@
                             <td class="text-white"><?php echo $dados['marca'] ?></td>
                             <td class="text-info"><?php echo $dados['modelo'] ?></td>
                             <td class="text-light"><?php echo $dados['cor'] ?></td>
-                            <td ><a href="editar.php?id=<?php echo $dados['id'];?>"> Editar</a></td>
-                            <td ><a href="excluir.php?id=<?php echo $dados['id'];?>"> Excluir</a></td>
+                            <td><a href="editar.php?id=<?php echo $dados['id'];?>"> Editar</a></td>
+                            <td><a href="excluir.php?id=<?php echo $dados['id'];?>"> Excluir</a></td>
                         </tr>
                         <?php }?>
                     </tbody>
