@@ -96,6 +96,7 @@
         <input class="textfield form-control" type="text" name="cor" placeholder="Digite a Cor"><br><br>
 
         <input class="btn-login" type="submit" value="Cadastrar">
+        <a href="painel.php" class="btn btn-login btn-lg  btn-padding-y:1rem ">Volta ao Painel</a>
     </form>
     </div>
     </form>
