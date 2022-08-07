@@ -1,9 +1,6 @@
 <?php
 include('dbcarslist.php');
 
-
-
-
 if(isset($_POST['email']) || isset($_POST['senha'])){
 
     if(strlen($_POST['email'] == 1)){
@@ -50,6 +47,12 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
     <title>Test Car</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <style>
+    body {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(8, 88, 74, 1) 35%, rgba(27, 145, 142, 1) 100%);
+    }
+    </style>
     <link rel="stylesheet" href="style.css">
     <style>
     *body {
@@ -80,6 +83,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
                     <input type="password" name="senha" placeholder="Senha" class="form-control">
                 </div>
                 <button type="submit" class="btn-login btn  btn-block btn-lg">Login</button>
+                <button class="btn-login btn  btn-block btn-lg"><a href="add_user.php">Cadastrar</a></button>
             </div>
             </form>
         </div>
