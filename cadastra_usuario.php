@@ -25,7 +25,7 @@
 
 <body>
 
-    <h1 class="text-white text-center">Cadastra Novo Usuário </h1>
+    <h1 class="text-white text-center">Cadastrar Novo Usuário </h1>
     <?php
 		if(isset($_SESSION['msg'])){
 			echo $_SESSION['msg'];
@@ -42,9 +42,9 @@
         <label class="text-white">Senha: </label>
         <input class="textfield form-control" type="text" name="senha" placeholder="Senha"><br><br>
 
-        <input class="form-control btn-login" type="submit" value="Cadastra Novo Usuário">
+        <input class="btn-login btn" type="submit" value="Cadastra Novo Usuário">
 
-        <a href="index.php" class="btn btn-login btn-lg  btn-padding-y:1rem ">Inicio</a>
+        <a href="index.php" class="btn-login btn ">Inicio</a>
     </form>
     </div>
     </form>

@@ -80,14 +80,15 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
                 <form action="index.php" method="POST">
                     <div class="textfield" class="form-group">
                         <label for="usuarios"> Usuário</label>
-                        <input type="text" name="email" placeholder="Digite seu Login" class="form-control">
+                        <input class="inputesss" type="text" name="email" placeholder="Digite seu Login"
+                            class="form-control">
                     </div>
                     <div class="textfield" class="form-group">
                         <label for="senhas"> Senha</label>
                         <input type="password" name="senha" placeholder="Digite sua Senha" class="form-control">
                     </div>
                     <button type="submit" class="btn-login btn  btn-block ">Login</button>
-                    <a href="cadastra_usuario.php" class="btn-login btn btn-primary ">Cadastrar</a>
+                    <a href="cadastra_usuario.php" class="btn-login btn">Cadastrar</a>
 
             </div>
             </form>

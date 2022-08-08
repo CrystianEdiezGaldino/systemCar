@@ -40,31 +40,30 @@
 
             <p>Para ter acesso ao Painel é necessário está logado.</p>
             <p>Click em Sair para deslogar.</p>
-            <a href="logout.php" class="btn btn-primary">Sair</a>
+            <a href="logout.php" class="btn">Sair</a>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-light  ">
+    <nav class="navbar navbar-expand-lg bg-dark  ">
         <div class="container-fluid ">
-            <a class="navbar-brand "><?php echo $_SESSION['nome'];?>
+            <a class="navbar-brand text-white "><?php echo $_SESSION['nome'];?>
                 <p>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="cadastrar.php">Cadastrar</a>
+                        <a class="nav-link text-white" aria-current="page" href="cadastrar.php">Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-white" aria-current="page" data-bs-toggle="offcanvas"
+                            data-bs-target="#demo" href="">Sair</a>
                     </li>
                 </ul>
 
-                <div class="position-fixed top-0 end-0">
-
-                    <button type="button" class="btn btn-outline-danger btn-lg  btn-padding-y:1rem"
-                        data-bs-toggle="offcanvas" data-bs-target="#demo"><a>SAIR</a></button>
-
-                </div>
             </div>
         </div>
 
