@@ -47,7 +47,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
     <title>LOGIN - Cadastro de Carros</title>
     <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
     <meta name="author" content="Crystian Ediez Galdino">
-    <meta name="description" content="Portfólio da desenvolvedor front-end Crystian Ediez Galdino">
+    <meta name="description" content="Portfólio do desenvolvedor front-end Crystian Ediez Galdino">
     <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
