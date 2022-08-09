@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Crystian Ediez Galdino">
-    <meta name="description" content="Portfólio da desenvolvedor front-end Crystian Ediez Galdino">
+    <meta name="description" content="Portfólio do desenvolvedor front-end Crystian Ediez Galdino">
     <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"

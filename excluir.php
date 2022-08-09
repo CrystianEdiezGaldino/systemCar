@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Crystian Ediez Galdino">
-    <meta name="description" content="Portfólio da desenvolvedor front-end Crystian Ediez Galdino">
+    <meta name="description" content="Portfólio do desenvolvedor front-end Crystian Ediez Galdino">
     <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -53,8 +53,9 @@
             <a class="navbar-brand text-white "><?php echo $_SESSION['nome'];?>
                 <p>
             </a>
-            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -67,7 +68,8 @@
                         <a class="nav-link  text-white" aria-current="page" href="cadastrar.php">Cadastrar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  text-white " aria-current="page" data-bs-toggle="offcanvas"  data-bs-target="#demo" href="">Sair</a>
+                        <a class="nav-link  text-white " aria-current="page" data-bs-toggle="offcanvas"
+                            data-bs-target="#demo" href="">Sair</a>
                     </li>
                 </ul>
             </div>

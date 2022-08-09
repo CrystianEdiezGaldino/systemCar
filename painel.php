@@ -13,7 +13,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Crystian Ediez Galdino">
-    <meta name="description" content="Portfólio da desenvolvedor front-end Crystian Ediez Galdino">
+    <meta name="description" content="Portfólio do desenvolvedor front-end Crystian Ediez Galdino">
     <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -82,6 +82,7 @@
                     class="table table-striped table-dark table-bordered table-borderless table-responsive  table-hover ">
                     <thead>
                         <tr>
+                        <th class="text-white">Id</th>
                             <th class="text-white">Marca</th>
                             <th class="text-info">Modelo</th>
                             <th class="text-light">Cor</th>
@@ -92,6 +93,7 @@
                     <?php while($dados = $con->fetch_assoc()){ ?>
                     <tbody>
                         <tr>
+                             <td class="text-white"><?php echo $dados['id'] ?></td>
                             <td class="text-white"><?php echo $dados['marca'] ?></td>
                             <td class="text-info"><?php echo $dados['modelo'] ?></td>
                             <td class="text-light"><?php echo $dados['cor'] ?></td>
